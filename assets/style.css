@@ -38,15 +38,7 @@ h1:hover{
   background-color: white;
   color: #738769;
 }
-#content{
-  float:left;
-  background-image: url(images/bg-2.png);
-  width:650px;
-  margin-left: 60px;
-  padding:20px;
-  margin-top: 30px;
-  margin-bottom: 50px;
-}
+
 h2{
   font-size: 35px;
   margin-bottom: 20px;
@@ -95,6 +87,15 @@ a{
 }
 
 /*INDEX PAGE-- these style attributes are specific to the about page----------*/
+#contentIndex{
+  float:left;
+  background-image: url(images/bg-2.png);
+  width:650px;
+  margin-left: 60px;
+  padding:20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 #profile{
   width:200px;
   height:300px;
@@ -113,6 +114,15 @@ a:hover{
 }
 
 /*PORTFOLIO-- these style attributes are specific to the portfolio page-------*/
+#contentFolio{
+  float:left;
+  background-image: url(images/bg-2.png);
+  width:650px;
+  margin-left: 60px;
+  padding:20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 
 #calc{
 margin-left: 100px;
@@ -194,6 +204,15 @@ top: -70px;
 }
 
 /*CONTACT- these style attributes are specific to the contact page-----------*/
+#contentContact{
+  float:left;
+  background-image: url(images/bg-2.png);
+  width:650px;
+  margin-left: 60px;
+  padding:20px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
 #contact hr{
   height:3px;
   background-color: #738769;
@@ -220,4 +239,119 @@ input{
   font-size: 20px;
 }
 
-/*------------------------------------------END--------------------------------*/
+/*--------------BEGINNING OF MEDIA QUERIES------------------------------------*/
+/*Media query for a witdh of 640px*/
+@media only screen and (max-width: 640px){
+  ul{
+    display:inline;
+    margin: 0px;
+    text-align: center;
+  }
+  li{
+    margin: auto;
+    margin-left:100px;
+    margin-top: 30px;
+  }
+  h1{
+    margin:0px;
+    float: none;
+    text-align: center;
+  }
+
+  /*For index*/
+  #contentIndex{
+    width:550px;
+    margin: auto;
+    margin: 10px;
+  }
+  #profile{
+    width:550px;
+    height:400px;
+    margin:10px 30px 10px 0px;
+    object-fit: cover;
+    object-position: 0 0;
+    position: relative;
+  }
+  #connect{
+    width:570px;
+    margin:none;
+    clear: both;
+    margin-top: 30px;
+    margin-left: 10px;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  /*For portfolio*/
+  #contentFolio{
+    width:550px;
+    margin: auto;
+    margin: 10px;
+    height:1050px;
+  }
+  #calc{
+    margin-left: 10px;
+  }
+  #weather{
+    position:relative;
+    top:200px;
+    left:-360px;
+  }
+  #wiki{
+    position:relative;
+    top:150px;
+    left:-50px;
+  }
+  #clock{
+    position:relative;
+    top:330px;
+    left:-350px;
+  }
+  #calc h3{
+    width:510px;
+    text-align: center;
+  }
+  #weather h3{
+    width:510px;
+    text-align: center;
+  }
+  #wiki h3{
+    width:510px;
+    text-align: center;
+  }
+  #clock h3{
+    width:510px;
+    text-align: center;
+  }
+  #calc img{
+    position: relative;
+    left:190px;
+  }
+  #weather img{
+    margin-left: 30px;
+    position: relative;
+    left:130px;
+  }
+  #wiki img{
+    margin-left: 30px;
+    position: relative;
+    left:130px;
+  }
+  #clock img{
+    margin-left: 30px;
+    position: relative;
+    left:130px;
+  }
+  #page{
+    overflow-x: hidden;
+  }
+  /*For contact*/
+  #contentContact{
+    width:550px;
+    margin-left: 10px;
+  }
+  .details{
+    width:100%;
+  }
+}
+
+/*Media Query for a width of 768px*/
