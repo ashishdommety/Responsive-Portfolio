@@ -500,3 +500,10 @@ input{
     width:95%;
   }
 }
+
+/*Extra media query from 982px to 1175px */
+@media screen and (min-width:982px) and (max-width:1175px){
+  ul{
+    margin-left: 600px;
+  }
+}
